@@ -1,5 +1,9 @@
 # Sophia retrieval follow-up audit and handoff
 
+Scope correction: the leader's subsequently supplied assignment is the
+[final-output validation agent](vantage-validation-agent.md). This document records
+an earlier proposed retrieval follow-up; it is not completion of that assignment.
+
 Sophia's next deliverable is an authorized source-search adapter and a measured
 retrieval-quality improvement. The Week 2 prototype is already incorporated into
 the leader's synthetic demo. Rebuilding that prototype or taking over Joseph's

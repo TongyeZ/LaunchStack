@@ -12,6 +12,20 @@ evidence + metric observations ──► signals (pure) ──► evidence pack
         ──► decision + commitment ──► next week's signals
 ```
 
+## Final-output validation
+
+Sophia's evaluation agent is exported separately from
+`@launchstack/pipelines/vantage/validation`. It consumes Joseph's scenario documents
+and expectations plus actual Vantage output, then assesses grounding, expected-item
+coverage, temporal correctness, relevance, actionability and readability. It returns
+traceable findings and JSON/Markdown reports without changing generation or saving actions.
+
+Run `pnpm --filter @launchstack/pipelines demo:validation` for five labeled offline
+examples, or `test:validation` for evaluator regression tests. Without an explicitly
+configured judge, semantic scores stay unassessed. The demo is recorded fixture
+replay, not live model validation. See the [validation agent handoff](../../../docs/design/vantage-validation-agent.md)
+for Joseph's JSON format, saved-report adapters, live opt-in, scoring and calibration.
+
 ## Tables (product migration set)
 
 | Table                                   | What one row is                                                                                               |
